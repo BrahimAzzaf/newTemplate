@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply h-full;
+}
+
+body {
+  @apply bg-slate-950 text-slate-50 font-body antialiased;
+}
+
+.gradient-overlay {
+  background: radial-gradient(circle at top left, rgba(248, 250, 252, 0.18), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(248, 250, 252, 0.12), transparent 55%);
+}
+
+.glass-panel {
+  @apply bg-slate-900/60 backdrop-blur-xl border border-slate-800/60 shadow-soft;
+}
